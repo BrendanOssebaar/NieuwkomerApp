@@ -104,6 +104,8 @@ while True:
                     print("Goed einde")
                     break
     elif k1 == "B":
+        print("Je gaat terug vechten bij een verzetsstrijders")
+        sleep(3)
         print("")
     elif k1 == "C":
         print("")

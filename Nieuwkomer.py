@@ -6,7 +6,7 @@ while True:
     sleep(5)
     print("Jij bent een volwassen man wonend in Amsterdam")
     sleep(5)
-    print("Je hebt 4 keuzes:")
+    print("Je hebt 5 keuzes:")
     print("A: Je duikt onder")
     print("B: Je vecht terug met de verzetstrijders")
     print("C: Je vlucht naar het buitenland")
@@ -39,8 +39,8 @@ while True:
                 print("Je blijft tot het einde van de oorlog veilig bij je grootouders")
                 print("Goed einde")
                 break
-            elif k1aa == "B" or k1ab == "B":
-                print("Je plakt 'savonds flyers op de muren om mensen aan te moedigen terug te vechten")
+            elif k1aa == "B":
+                print("Je plakt 's avonds flyers op de muren om mensen aan te moedigen terug te vechten")
                 sleep(4)
                 print("Je word een avond betrapt en word naar duitsland gestuurd om te werken in een werkkamp tot het einde van de oorlog")
                 print("Neutraal einde, opnieuw proberen? Y/N")
@@ -48,6 +48,8 @@ while True:
                 if k1aab == "N":
                     break
             elif k1aa == "C":
+                print("Je probeert te vluchten")
+                sleep(3)
                 print("Je wordt verraden en opgepakt.")
                 sleep(4)
                 print("Je wordt naar een werkkamp in Duitsland gestuurd en werkt daar tot het einde van de oorlog")
@@ -71,6 +73,14 @@ while True:
                 sleep(3)
                 print("Goed einde")
                 break
+            elif k1ab == "B":
+                print("Je plakt 's avonds flyers op de muren om mensen aan te moedigen terug te vechten")
+                sleep(4)
+                print("Je word een avond betrapt en word naar duitsland gestuurd om te werken in een werkkamp tot het einde van de oorlog")
+                print("Neutraal einde, opnieuw proberen? Y/N")
+                k1abb = input().capitalize()
+                if k1abb == "N":
+                    break
             elif k1ab == "C":
                 print("Jij en je vrienden kiezen ervoor om te vluchten")
                 sleep(3)
@@ -106,9 +116,113 @@ while True:
     elif k1 == "B":
         print("Je gaat terug vechten bij een verzetsstrijders")
         sleep(3)
-        print("")
+        print("Je maakt deel uit van een groep strijders met een basis in westpoort")
+        sleep(3)
+        print("Er zijn meerdere teams die verschillende manieren van terugvechten uitvoeren")
+        sleep(3)
+        print("Er is een team voor sabotages en een team voor propaganda")
+        sleep(3)
+        print("Welk team steun je?")
+        sleep(3)
+        print("A: Sabotage Team")
+        print("B: Propaganda Team")
+        k1b = input().capitalize()
+        if k1b == "A":
+            print("Je gaat het sabotage team ondersteunen")
+            sleep(3)
+            print("Er zijn een aantal targets om te saboteren:")
+            sleep(3)
+            print("A: Een munitie depot")
+            print("B: Een Duitse propaganda post")
+            print("Welke ga je saboteren?")
+            k1ba = input().capitalize()
+            if k1ba == "A":
+                print("Je besluit het munitie depot op te blazen")
+                sleep(2)
+                print("Jij en je teamgenoten hebben aantal explosieven weten te verkrijgen en 's nachts gaan jullie langs bij het depot om het op te blazen")
+                sleep(6)
+                print("Helaas hebben de Duitsers je team gesnapt en opgepakt")
+                sleep(4)
+                print("Je wordt door het Duitse gerechtshof beoordeelt en je wordt publiekelijk geëxecuteerd")
+                sleep(5)
+                print("Slecht einde. Opnieuw proberen? Y/N")
+                k1baa = input().capitalize()
+                if k1baa == "N":
+                    break
+            elif k1ba == "B":
+                print("Je besluit een Duitse propaganda post op te blazen")
+                sleep(3)
+                print("Je blijf zo door gaan tot het einde van de oorlog")
+                print("Goed einde")
+                break
+        elif k1b == "B":
+            print("Je gaat het propaganda team ondersteunen")
+            sleep(2)
+            print("Jij en je team houden een geheime publieke radio bij en verspreiden flyers en posters door de stad")
+            sleep(4)
+            print("Je blijft zo doorgaan tot het einde van de oorlog")
+            sleep(2)
+            print("Goed einde")
+            break
     elif k1 == "C":
-        print("")
+        print("Je besluit te vluchten")
+        sleep(3)
+        print("Je vlucht naar:")
+        print("A: Frankrijk")
+        print("B: Engeland")
+        print("C: Amerika")
+        k1c = input().capitalize()
+        if k1c == "A":
+            print("Je besluit naar Frankrijk te vluchten")
+            sleep(2)
+            print("Hoe ga je dit doen?")
+            print("A: Te voet")
+            print("B: Met de auto")
+            k1ca = input().capitalize()
+            if k1ca == "A":
+                print("Je gaat te voet naar Frankrijk")
+                sleep(2)
+                print("Doordat je te voet gaat kan je niet veel meenemen, maar je blijft wel goed uit het zicht van de Duitsers")
+                sleep(5)
+                print("Je komt aan bij de Belgische grens, geen Duitsers in zicht, dus doorlopen")
+                sleep(3)
+                print("Je komt aan bij de Franse grens, ook hier geen Duitsers. ")
+                sleep(3)
+                print("Je trekt je route door tot Zuid-Frankrijk")
+                sleep(2)
+                print("Je blijft daar tot het einde van de oorlog")
+                print("Goed einde")
+                break
+            elif k1ca == "B":
+                print("Je gaat met de auto richting Frankrijk")
+                sleep(3)
+                print("Je komt een heel eind, maar bij de grens wordt je gezien door Duitsers en aangehouden")
+                sleep(4)
+                print("Je wordt naar Duitsland gestuurd om te werken in een werkkamp")
+                print("Neutraal einde, opnieuw proberen? Y/N")
+                k1caa = input().capitalize()
+                if k1caa == "N":
+                    break
+        elif k1c == "B":
+            print("Je wil naar Engeland")
+            sleep(2)
+            print("Je probeert een boot te vinden om naar Engeland te vluchten")
+            sleep(3)
+            print("Iemand rapporteerd je bij de SS en je wordt opgepakt")
+            sleep(3)
+            print("Je wordt naar Duitsland gestuurd om te werken in een werkkamp tot het einde van de oorlog")
+            sleep(4)
+            print("Neutraal einde, opnieuw proberen? Y/N")
+            k1cb = input().capitalize()
+            if k1cb == "N":
+                break
+        elif k1c == "C":
+            print("Je wil naar Amerika vluchten")
+            sleep(2)
+            print("Via wat vrienden krijg je het voor elkaar om met de boot naar Engeland te gaan en vanuit Engeland ga je met een vliegtuig naar Amerika")
+            sleep(5)
+            print("Goed einde")
+            break
     elif k1 == "D":
         print("Je verraad je land en werkt voor de SS tot het einde van de oorlog")
         sleep(5)
@@ -130,3 +244,4 @@ while True:
         print("Neutraal einde")
         sleep(3)
         break
+    

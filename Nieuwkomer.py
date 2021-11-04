@@ -16,21 +16,20 @@ while True:
     k1 = input().capitalize()
     if k1 == "A":
         print("Je besluit onder te duiken")
-        sleep(5)
+        sleep(2)
         print("Bij wie ga je onderduiken?")
-        sleep(5)
+        sleep(2)
         print("A: Je familie")
         print("B: Je vrienden")
         k1a = input().capitalize()
         if k1a == "A":
             print("Je duikt onder bij je oma en opa")
-            sleep(4)
+            sleep(2)
             print("Je brengt veel tijd door op zolder")
-            sleep(4)
+            sleep(2)
             print("Alleen voor eten kom je naar beneden")
-            sleep(4)
+            sleep(2)
             print("Wat ga je doen?")
-            sleep(3)
             print("A: Je blijft tot het einde van de oorlog")
             print("B: Je kiest ervoor om toch een beetje terug te vechten, door middel van 's nachts flyers op te hangen")
             print("C: Je vlucht naar het buitenland, want het wordt hier te druk qua Duitsers")
@@ -244,4 +243,5 @@ while True:
         print("Neutraal einde")
         sleep(3)
         break
-    
+    else :
+        print("Dat is geen keuze, probeer opnieuw")
